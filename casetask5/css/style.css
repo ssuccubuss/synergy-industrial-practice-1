@@ -1,0 +1,29 @@
+/* Основные стили для привязки подвала к низу */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Используем viewport height для полного покрытия */
+}
+
+.container {
+    flex: 1 0 auto; /* Растягиваем контейнер на все доступное пространство */
+    padding-bottom: 20px; /* Отступ от подвала */
+}
+
+footer {
+    flex-shrink: 0; /* Запрещаем сжатие подвала */
+    margin-top: auto; /* Автоматический отступ сверху */
+}
+
+/* Дополнительные стили для подвала */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
